@@ -4,6 +4,9 @@ Requirement
 Usage 
 java -jar hapMap2JoinMap01.jar HapMap.hmp.txt momDataName dadDataName ToleranceThreshold MarkerSimilarity output.joinmap output.bad_loci output.stats outputThreshold.joinmap outputMarkerSimilarity.joinmap outputChisq.joinmap
 
+Example of usage
+java –jar hapMap2JoinMap01.jar HapMap.hmp.txt P1Su_HWI-Mom P2R_HWI-Dad 0.95 0.95 output.joinmap output.bad_loci output.stats  outputThreshold.joinmap outputMarkerSimilarity.joinmap outputChisq.joinmap
+
 Input 1 file and 4 parameters
 HapMap format file:  HapMap.hmp.txt (tab-delimited file) 
 momDataName: momSampleName in HapmapFile
@@ -30,7 +33,4 @@ Joinmap format file: outputMarkerSimilarity.joinmap
 •	Number of loci satisfy tolerance threshold and marker similarity
 Joinmap format file: outputChisq.joinmap
 •	Number of loci satisfy tolerance threshold, marker similarity and significance level(0.0001) of Chi-sq distribution
-
-Example of usage
-java –jar hapMap2JoinMap01.jar HapMap.hmp.txt P1Su_HWI-Mom P2R_HWI-Dad 0.95 0.95 output.joinmap output.bad_loci output.stats  outputThreshold.joinmap outputMarkerSimilarity.joinmap outputChisq.joinmap
 
